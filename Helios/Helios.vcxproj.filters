@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Private">
+      <UniqueIdentifier>{001F8D23-6CFE-0BBF-7516-9795E1747220}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Private\Core">
+      <UniqueIdentifier>{58A311B7-4406-A15B-ED8B-D911D9CD6CDE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public">
+      <UniqueIdentifier>{8480F8CA-7022-23A1-59DD-36F5451EAAF1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public\Core">
+      <UniqueIdentifier>{5C97AA31-C84C-2327-5141-1DFEBDF5192B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Public\Core\Engine.h">
+      <Filter>Public\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Debug\Logger.h" />
+    <ClInclude Include="Source\Public\Core\Device.h" />
+    <ClInclude Include="Source\Public\Graphics\Renderer.h" />
+    <ClInclude Include="Source\Public\Graphics\Shader.h" />
+    <ClInclude Include="Source\Public\EC\Entity.h" />
+    <ClInclude Include="Source\Public\EC\Component.h" />
+    <ClInclude Include="Source\Public\EC\Components\TransformComponent.h" />
+    <ClInclude Include="Source\Public\EC\Components\MeshComponent.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Private\Core\Engine.cpp">
+      <Filter>Private\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Debug\Logger.cpp" />
+    <ClCompile Include="Source\Private\Core\Device.cpp" />
+    <ClCompile Include="Source\Private\Graphics\Renderer.cpp" />
+    <ClCompile Include="Source\Private\Graphics\Shader.cpp" />
+    <ClCompile Include="Source\Private\EC\Entity.cpp" />
+    <ClCompile Include="Source\Private\EC\Component.cpp" />
+    <ClCompile Include="ThirdParty\GLAD\src\gl.c" />
+    <ClCompile Include="Source\Private\EC\Components\TransformComponent.cpp" />
+    <ClCompile Include="Source\Private\EC\Components\MeshComponent.cpp" />
+  </ItemGroup>
+</Project>
