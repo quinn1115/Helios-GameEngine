@@ -16,7 +16,7 @@ MeshComponent::~MeshComponent()
 void MeshComponent::Init()
 {
 
-	m_pShader = new Shader();
+	m_pShader = new Shader("","");
 	
 	glGenVertexArrays(1, &VAO);
 	glGenBuffers(1, &VBO);

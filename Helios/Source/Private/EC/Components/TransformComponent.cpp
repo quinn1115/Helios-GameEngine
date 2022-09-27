@@ -2,9 +2,6 @@
 #include "gtc/matrix_transform.hpp"
 #include "gtc/type_ptr.hpp"
 
-#define GLM_ENABLE_EXPERIMENTAL
-#include <gtx/quaternion.hpp>
-
 using namespace Helios;
 
 
@@ -33,12 +30,13 @@ void TransformComponent::SetPosition(glm::vec3 a_Position)
 
 void TransformComponent::AddRotation(glm::vec3 a_Rotation)
 {
-	m_Transform.Rotation += a_Rotation;
+	glm::quat rot = glm::quat(a_Rotation);
+	m_Transform.Rotation *= rot;
 }
 
 void TransformComponent::SetRotation(glm::vec3 a_Rotation)
 {
-	m_Transform.Rotation = a_Rotation;
+	m_Transform.Rotation = glm::quat(a_Rotation);
 }
 
 

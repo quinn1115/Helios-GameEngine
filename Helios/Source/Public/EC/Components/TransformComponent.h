@@ -1,13 +1,14 @@
 #pragma once
 #include "EC/Component.h"
 #include "glm.hpp"
+#include "gtx/quaternion.hpp"
 
 namespace Helios
 {
 	struct Transform
 	{
 		glm::vec3 Translation = glm::vec3(0.0f, 0.0f, 0.0f);
-		glm::vec3 Rotation = glm::vec3(0.0f, 0.0f, 0.0f);
+		glm::quat Rotation = glm::quat(glm::vec3(0,0,0));
 		glm::vec3 Scale = glm::vec3(1.0f, 1.0f, 1.0f);
 	};
 
