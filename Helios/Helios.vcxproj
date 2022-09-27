@@ -118,6 +118,7 @@
     <ClCompile Include="Source\Private\Graphics\Renderer.cpp" />
     <ClCompile Include="Source\Private\Graphics\Shader.cpp" />
     <ClCompile Include="ThirdParty\GLAD\src\gl.c" />
+    <ClCompile Include="ThirdParty\tinygltf\tiny_gltf.cc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

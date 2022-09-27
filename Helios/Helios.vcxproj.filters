@@ -40,5 +40,6 @@
     <ClCompile Include="ThirdParty\GLAD\src\gl.c" />
     <ClCompile Include="Source\Private\EC\Components\TransformComponent.cpp" />
     <ClCompile Include="Source\Private\EC\Components\MeshComponent.cpp" />
+    <ClCompile Include="ThirdParty\tinygltf\tiny_gltf.cc" />
   </ItemGroup>
 </Project>

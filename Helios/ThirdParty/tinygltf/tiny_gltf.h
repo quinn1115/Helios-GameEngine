@@ -826,7 +826,7 @@ struct BufferView {
   size_t byteLength{0};  // required, minimum 1. 0 = invalid
   size_t byteStride{0};  // minimum 4, maximum 252 (multiple of 4), default 0 =
                          // understood to be tightly packed
-  int target{0};  // ["ARRAY_BUFFER", "ELEMENT_ARRAY_BUFFER"] for vertex indices
+  int target{0};  // ["ARRAY_BUFFER", "ELEMENT_ARRAY_BUFFER"] for m_Vertex indices
                   // or atttribs. Could be 0 for other data
   Value extras;
   ExtensionMap extensions;
